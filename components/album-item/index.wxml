@@ -1,0 +1,8 @@
+<view class="item">
+  <view class="image">
+    <image mode="widthFix" src="{{item.picUrl}}"></image>
+  </view>
+  <view class="info">
+    {{item.artists[0].name}} - {{item.name}}
+  </view>
+</view>

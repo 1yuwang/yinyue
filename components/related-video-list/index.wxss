@@ -1,0 +1,5 @@
+/* components/related-video-list/index.wxss */
+.related-video-list {
+  padding-left: 20rpx;
+  margin-top: 50rpx;
+}

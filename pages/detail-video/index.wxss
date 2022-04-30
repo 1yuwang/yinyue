@@ -1,0 +1,49 @@
+/* pages/detail-video/index.wxss */
+page {
+  padding-top: 220px;
+}
+
+.video {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.danmu {
+  display: flex;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+}
+
+.input {
+  border: .5px solid #8a8a8a;
+  height: 60rpx;
+  flex: 1;
+  padding-left: 20rpx;
+}
+
+.button {
+  height: 60rpx;
+  width: 112rpx;
+}
+
+.videoInfo {
+  padding: 20rpx;
+}
+
+.videoInfo .title {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist-name,
+.play-count {
+  color: #666;
+  font-size: 24rpx;
+}
+
+.artist-name {
+  margin: 10rpx 0;
+}

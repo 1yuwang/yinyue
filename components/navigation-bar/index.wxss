@@ -1,0 +1,25 @@
+.nav-bar {
+  display: flex;
+  height: 44px;
+  text-align: center;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+}
+
+
+.center {
+  line-height: 44px;
+  flex: 1;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.active {
+  color: #fff;
+}

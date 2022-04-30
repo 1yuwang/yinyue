@@ -1,0 +1,105 @@
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-cover {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(50px);
+}
+
+.nav-bar {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+  color: #aaa;
+  font-size: 26rpx;
+}
+
+.nav-bar .return {
+  padding-left: 20rpx;
+}
+
+.nav-bar .title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-bar .title .item.active {
+  color: #fff;
+}
+
+.nav-bar .title .divider {
+  padding: 0 16rpx;
+}
+
+/* 歌曲信息 */
+.content {
+  height: 100%;
+  padding: 60rpx;
+}
+
+.content .cover {
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+
+.content .info {
+  color: #ccc;
+  font-size: 26rpx;
+}
+
+.content .info .song-name {
+  margin-top: 35rpx;
+  color: #fff;
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.content .info .nick-name,
+.content .info .album {
+  margin: 20rpx 0;
+}
+
+.content .info .album {
+  margin-bottom: 50rpx;
+}
+
+/* 滑动条 */
+.slider {
+  margin: 20rpx 0 !important;
+}
+
+/* 时间 */
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+  color: #ccc;
+  font-size: 22rpx;
+
+}
+
+
+/* 控制栏 */
+.control-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-bar .music-icon {
+  width: 64rpx;
+  height: 64rpx;
+}

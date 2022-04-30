@@ -1,0 +1,12 @@
+<!--components/related-video-item/index.wxml-->
+<wxs src="../../utils/format.wxs" module="format"></wxs>
+<view class="related-video">
+  <view class="image">
+    <image mode="widthFix" src="{{relatedVideo.coverUrl}}"></image>
+    <view class="count">{{format.formatCount(relatedVideo.playTime)}}</view>
+  </view>
+  <view class="info">
+    <view class="title">{{relatedVideo.title}}</view>
+    <view class="artist-name">{{relatedVideo.creator[0].userName}}</view>
+  </view>
+</view>

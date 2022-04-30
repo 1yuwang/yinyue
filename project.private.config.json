@@ -1,0 +1,84 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "home-video",
+          "pathName": "pages/home-video/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail-video/index",
+          "query": "id=14480854",
+          "scene": null
+        },
+        {
+          "name": "detail-song",
+          "pathName": "pages/detail-song/index",
+          "query": "id=7020312267",
+          "scene": null
+        },
+        {
+          "name": "更多页面",
+          "pathName": "pages/detail-song/index",
+          "query": "rankingName=hotRanking",
+          "scene": null
+        },
+        {
+          "name": "detail-song-menu",
+          "pathName": "pages/detail-song/index",
+          "query": "id=6954660951&type=menu",
+          "scene": null
+        },
+        {
+          "name": "search-detail",
+          "pathName": "pages/detail-search/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "歌单更多页面",
+          "pathName": "pages/song-menu-list/index",
+          "query": "tag=%E5%85%A8%E9%83%A8",
+          "scene": null
+        },
+        {
+          "name": "music-play",
+          "pathName": "pages/music-player/index",
+          "query": "id=1901371647",
+          "scene": null
+        },
+        {
+          "name": "歌曲播放页面",
+          "pathName": "pages/song-player/index",
+          "query": "id=1891469546",
+          "scene": null
+        },
+        {
+          "name": "播放歌曲",
+          "pathName": "pages/music-player/index",
+          "query": "id=1330348068",
+          "scene": null
+        },
+        {
+          "name": "profile",
+          "pathName": "pages/home-profile/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

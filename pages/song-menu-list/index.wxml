@@ -1,0 +1,9 @@
+<area-header title="{{title === '全部' ? '热门' : title}}" showDefault="{{false}}" />
+
+<view class="list">
+  <block wx:for="{{songMenuList}}" wx:key="id">
+    <view class="item">
+      <song-menu-item item="{{item}}" bindtap="handleMenuItemClick" data-id="{{item.id}}" />
+    </view>
+  </block>
+</view>

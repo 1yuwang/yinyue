@@ -1,0 +1,1 @@
+<button bindtap="hanldeGetUserInfo">获取用户信息</button>

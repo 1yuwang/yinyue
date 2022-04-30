@@ -1,0 +1,7 @@
+<!--components/related-video-list/index.wxml-->
+<view class="related-video-list">
+  <view>推荐视频</view>
+  <block wx:for="{{relatedVideos}}" wx:key="index">
+    <related-video-item relatedVideo="{{item}}" />
+  </block>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/detail-video/index.wxml-->
+<!-- mv -->
+<video autoplay referrer-policy="origin" class="video" src="{{mvURLInfo.url}}" danmu-list="{{danmuList}}"></video>
+<!-- mv相关信息 -->
+<view class="danmu" hidden>
+  <input class="input" type="text" placeholder="请输入弹幕" />
+  <button class="button" type="primary" size="mini">发送</button>
+</view>
+<wxs src="../../utils/format.wxs" module="format"></wxs>
+<view class="videoInfo">
+  <view class="title">{{mvDetail.name}}</view>
+  <view class="artist-name">{{mvDetail.artistName}} - {{mvDetail.publishTime}}</view>
+  <view class="play-count">
+    点击次数: {{format.formatCount(mvDetail.playCount)}}
+  </view>
+</view>
+<!-- 推荐视频 -->
+<related-video-list relatedVideos="{{relatedVideos}}" />

@@ -1,0 +1,35 @@
+/* components/area-header/index.wxss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.default {
+  color: #8a8a8a;
+  font-size: 28rpx;
+}
+
+.default::after {
+  content: "";
+  display: inline-block;
+  width: 12rpx;
+  height: 12rpx;
+  /* border: 1px solid red; */
+  border-bottom: 4rpx;
+  border-right: 4rpx;
+  border-style: solid;
+  border-color: transparent #8a8a8a #8a8a8a transparent;
+  transform: rotate(-45deg);
+}

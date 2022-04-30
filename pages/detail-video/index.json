@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "related-video-list": "../../components/related-video-list"
+  }
+}

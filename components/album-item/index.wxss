@@ -1,0 +1,19 @@
+.image {
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+
+.image image {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 0 15rpx;
+  font-size: 26rpx;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

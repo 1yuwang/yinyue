@@ -1,0 +1,10 @@
+<!--components/area-header/index.wxml-->
+<view class="header">
+  <view class="title">{{title}}</view>
+  <view class="right" bindtap="handlerRightClick">
+    <view wx:if="{{showDefault}}" class="default">更多</view>
+    <view wx:else>
+      <slot></slot>
+    </view>
+  </view>
+</view>

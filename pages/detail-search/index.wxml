@@ -1,0 +1,68 @@
+<van-search class="search" background="#fafafa" value="{{searchValue}}" shape="round" placeholder="搜索" bind:change="handleSearchChange" bind:search="handleSearchAction" show-action="{{searchValue}}" focus="{{true}}" />
+
+<!-- 热门搜索 -->
+<view class="hot" wx:if="{{!searchValue.length && !suggestSongs.length}}">
+  <area-header title="热门搜索" showDefault="{{false}}" />
+  <view class="list">
+    <block wx:for="{{hotKeywords}}" wx:key="first">
+      <view class="tag" bindtap="handleTagItemClick" data-keyword="{{item.first}}">{{item.first}}</view>
+    </block>
+  </view>
+
+  <!-- 历史搜索 -->
+  <area-header title="历史搜索" showDefault="{{false}}" />
+  <view class="list">
+    <block wx:for="{{historySearch}}" wx:key="first">
+      <view class="tag" bindtap="handleTagItemClick" data-keyword="{{item}}">{{item}}</view>
+    </block>
+  </view>
+
+</view>
+
+<!-- 建议搜索 -->
+<view class="suggest" wx:if="{{suggestSongs.length && !resultSongs.length}}">
+  <view class="title">搜索: {{searchValue}}</view>
+  <view class="list">
+    <block wx:for="{{suggestSongsNodes}}" wx:key="keyword">
+      <view class="item" bindtap="handleSuggestItemClick" data-index="{{index}}">
+        <image class="icon" mode="widthFix" src="/assets/images/icons/search_icon.png"></image>
+        <!-- <text class="text" bindtap="hanlderItemClick" data-keyword="{{item.keyword}}">{{item.keyword}}</text> -->
+        <rich-text nodes="{{item}}"></rich-text>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!-- 搜索结果 -->
+<view class="result" wx:if="{{resultSongs.length}}">
+  <!-- <view class="nav-bar">
+    <block wx:for="{{navBarTitles}}" wx:key="index">
+      <view class="item">
+        <text bindtap="hanldeNavBarItemClick" data-index="{{index}}" class="{{index === navBarCurrentIndex ? 'active' : ''}}">{{item}}</text>
+      </view>
+    </block>
+  </view> -->
+  <view class="title">最佳匹配</view>
+  <view wx:if="{{mode === 'single'}}">
+    <block wx:for="{{resultSongs}}" wx:key="id">
+      <song-item-v2 item="{{item}}" index="{{index + 1}}" bindtap="hanldeResultSongsItemClick" data-id="{{item.id}}" />
+    </block>
+  </view>
+
+  <!-- 专辑 -->
+  <!-- <view class="album-list" wx:elif="{{mode === 'album'}}">
+    <block wx:for="{{resultSongs}}" wx:key="id">
+      <view class="item">
+        <album-item item="{{item}}" />
+      </view>
+    </block>
+  </view> -->
+</view>
+
+<!-- 歌手 -->
+<!-- <view class="album-list" wx:elif="{{mode === 'singer'}}">
+  <block wx:for="{{resultSongs}}" wx:key="id">
+    <view class="item">
+    </view>
+  </block>
+</view> -->
